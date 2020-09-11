@@ -1,5 +1,5 @@
 {
-  "name": "arm-yan/responseWrapper",
+  "name": "arm-yan/response-wrapper",
   "type": "library",
   "description": "Response Wrapper",
   "keywords": [
@@ -8,7 +8,7 @@
     "response",
     "api"
   ],
-  "homepage": "https://github.com/arm-yan/responseWrapper",
+  "homepage": "https://github.com/arm-yan/response-wrapper",
   "license": "MIT",
   "authors": [
     {
