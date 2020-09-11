@@ -1,0 +1,37 @@
+{
+  "name": "arm-yan/responseWrapper",
+  "type": "library",
+  "description": "Response Wrapper",
+  "keywords": [
+    "arm-yan",
+    "wrapper",
+    "response",
+    "api"
+  ],
+  "homepage": "https://github.com/arm-yan/responseWrapper",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Arman Karapetyan",
+      "email": "arm.karapetyan@outlook.com",
+      "homepage": "https://github.com/arm-yan",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "~7.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Armyan\\Response\\": "src"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
