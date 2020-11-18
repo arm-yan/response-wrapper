@@ -41,6 +41,11 @@ class JsonWrapper implements WrapperInterface
     protected $message = '';
 
     /**
+     * @var integer
+     */
+    protected $status = 200;
+
+    /**
      * JsonWrapper constructor.
      */
     public function __construct()
@@ -82,6 +87,7 @@ class JsonWrapper implements WrapperInterface
     {
         $data["error"] = $this->error;
         $data["message"] = $this->message;
+        $data["status"] = $this->status;
         $data["body"] = $this->body;
         $data["logs"] = $this->logs;
 
@@ -132,5 +138,13 @@ class JsonWrapper implements WrapperInterface
     public function setMessage(string $message) : void
     {
         $this->message = $message;
+    }
+
+    /**
+     * @param int $statusCode
+     */
+    public function setStatus(int $statusCode) : void
+    {
+        $this->status = $statusCode;
     }
 }
