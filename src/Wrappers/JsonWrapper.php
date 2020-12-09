@@ -47,10 +47,11 @@ class JsonWrapper implements WrapperInterface
 
     /**
      * JsonWrapper constructor.
+     * @param string $protocol
      */
-    public function __construct()
+    public function __construct(string $protocol = 'http')
     {
-        $this->protocol = $_SERVER["SERVER_PROTOCOL"];
+        $this->protocol = $protocol;
         $this->headers = ['Content-Type: application/json'];
     }
 
