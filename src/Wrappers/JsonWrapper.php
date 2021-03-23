@@ -62,7 +62,8 @@ class JsonWrapper implements WrapperInterface
      */
     public function response(int $code = 200) : void
     {
-        $this->setHeader($this->protocol." ".$code);
+        http_response_code($code);
+        //$this->setHeader($this->protocol." ".$code);
         $wrappedData = $this->prepareData();
         ob_start();
         $this->createHeaders();
